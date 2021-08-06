@@ -7,8 +7,7 @@ output "secret_key" {
 }
 
 output "compartm_id" {
-    value = oci_identity_compartment.app-compartment.compartment_id
-    sensitive = true
+    value = oci_identity_compartment.app-compartment.id
 }
 
 output "deploy_user_id" {
